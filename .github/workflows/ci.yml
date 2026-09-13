@@ -35,4 +35,4 @@ jobs:
         with:
           context: ./app
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops-platform:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops-platform:${{ github.sha }}
